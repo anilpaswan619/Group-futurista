@@ -1,0 +1,182 @@
+/* CSS for Header Section */
+body {
+    font-family: Arial, sans-serif;
+  }
+.logo {
+    max-width:10em;
+ }
+ 
+header {
+    position: relative;
+    background-color: black;
+    height: 100vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
+  
+  header .container {
+    position: relative;
+    z-index: 2;
+  }
+  
+  header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+  }
+
+/* CSS for Header Menu Section */
+
+.menu-overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(45deg, #007bff, #6EFACC);
+    overflow-y: hidden;
+    transition: 0.5s;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    font-weight: bold;
+  }
+  .menu-overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: white;
+    display: inline-block;
+    transition: 0.3s;
+  }
+  
+  .menu-overlay a:hover, .menu-overlay a:focus {
+    background-image: linear-gradient(45deg, #007bff, #6EFACC);
+    border-radius: 10px;
+    color:#444655;
+  }
+  
+  .menu-overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  .menu {
+      font-size:40px;
+      cursor:pointer; 
+      background-image: linear-gradient(45deg, #007bff, #6EFACC);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+  }
+  
+  .header-block{
+      display: flex;
+      align-items:flex-end;
+  }
+  .menu-block {
+      display: flex;
+      justify-content:flex-end;
+    }
+
+.fodox-heading {
+    font-size: 40px;
+    font-weight: bold;
+  
+}
+.fodex-dates {
+    font-size: 30px;
+}
+
+ .fodox{
+ 
+background-image: linear-gradient(45deg, #007bff, #6EFACC);
+-webkit-background-clip: text;
+background-clip: text;
+-webkit-text-fill-color: transparent;
+font-size: 40px;
+font-weight:bold;
+            
+ }
+
+ .icon-text {
+    vertical-align:top;
+     font-size: 23px;
+ }
+ .list-item {
+     font-size: 20px;
+ }
+ .material-icons {
+    background-image: linear-gradient(45deg, #007bff, #6EFACC);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 33px!important; 
+    margin-right:5px;
+ }
+
+ul li {
+    display: inline-block;
+}
+li {
+    margin-right:25px;
+}
+.line-rule  {
+    font-size:50px;
+    
+}
+
+
+
+
+  /* CSS for responsiveness */
+
+  @media screen and (max-height: 450px) {
+    .menu-overlay {overflow-y: auto;}
+    .menu-overlay a {font-size: 20px}
+    .menu-overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+}
+@media screen and (max-width: 900px) {
+  
+  .line-rule {
+    display:none;
+}
+  }
+
+
+ 
+
+
+
