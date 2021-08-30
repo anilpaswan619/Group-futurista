@@ -55,17 +55,17 @@ header {
     z-index: 1;
     top: 0;
     left: 0;
-    background-image: linear-gradient(45deg, #007bff, #6EFACC);
+    background-image: linear-gradient(90deg, #007bff, #6EFACC);
     overflow-y: hidden;
     transition: 0.5s;
   }
   
   .overlay-content {
     position: relative;
-    top: 25%;
+    top: 30%;
     width: 100%;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 25px;
     font-weight: bold;
   }
   .menu-overlay a {
@@ -76,13 +76,11 @@ header {
     display: inline-block;
     transition: 0.3s;
   }
-  
   .menu-overlay a:hover, .menu-overlay a:focus {
-    background-image: linear-gradient(45deg, #007bff, #6EFACC);
+    background-image: linear-gradient(90deg, #007bff, #6EFACC);
     border-radius: 10px;
     color:#444655;
   }
-  
   .menu-overlay .closebtn {
     position: absolute;
     top: 20px;
@@ -92,57 +90,61 @@ header {
   .menu {
       font-size:40px;
       cursor:pointer; 
-      background-image: linear-gradient(45deg, #007bff, #6EFACC);
+      background-image: linear-gradient(90deg, #007bff, #6EFACC);
       -webkit-background-clip: text;
       background-clip: text;
       -webkit-text-fill-color: transparent;
   }
-  
   .header-block{
       display: flex;
       align-items:flex-end;
+      margin-top: 10px;
   }
   .menu-block {
       display: flex;
       justify-content:flex-end;
     }
 
+/* CSS for FODOx2021 Section */
+
+#header-content {
+  padding-bottom:8%;
+}
 .fodox-heading {
-    font-size: 40px;
-    font-weight: bold;
-  
+    font-size: 3vw;
+    padding: 15px;  
 }
 .fodex-dates {
-    font-size: 30px;
-}
-
- .fodox{
- 
-background-image: linear-gradient(45deg, #007bff, #6EFACC);
--webkit-background-clip: text;
-background-clip: text;
--webkit-text-fill-color: transparent;
-font-size: 40px;
-font-weight:bold;
-            
- }
-
- .icon-text {
-    vertical-align:top;
-     font-size: 23px;
- }
- .list-item {
-     font-size: 20px;
- }
- .material-icons {
-    background-image: linear-gradient(45deg, #007bff, #6EFACC);
+    font-size: 2vw;
+    padding: 25px;
+    background-image: linear-gradient(90deg, #007bff, #6EFACC);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 33px!important; 
-    margin-right:5px;
+   font-weight: bold;  
+}
+.fodox{
+background-image: linear-gradient(90deg, #007bff, #6EFACC);
+-webkit-background-clip: text;
+background-clip: text;
+-webkit-text-fill-color: transparent;
+font-size: 3vw;
+font-weight: bold;           
  }
-
+ .icon-text {
+    vertical-align:top;
+    font-size: 2vw;
+ }
+ .list-item {
+     font-size: 2vw;
+ }
+ .material-icons {
+    background-image: linear-gradient(90deg, #007bff, #6EFACC);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3vw!important;   
+ }
 ul li {
     display: inline-block;
 }
@@ -150,9 +152,83 @@ li {
     margin-right:25px;
 }
 .line-rule  {
-    font-size:50px;
-    
+    font-size:50px;   
 }
+.icon-link {
+  text-decoration: none;
+  color: white;
+}
+.icon-link:hover {
+  color:#3CC1E1;
+}
+#places{
+  font-size: 3vw!important; 
+}
+.list {
+  margin-top: 5%;
+}
+
+/* CSS for Digital onboarding summit */
+.summit {
+  text-align: center;
+  margin-top: 5%;
+}
+.summit-heading {
+  color:#007bff;
+}
+.summit-paragraph {
+  color: #444655;
+  padding: 2%;
+}
+.summit-cards {
+  display:inline-block;
+  width: 22rem;
+  border-radius: 12px;
+  color: #444655;
+  border: none;
+  margin: 8px;
+}
+.card-img-top {
+  width:80px;
+  margin-top: 30px;
+}
+.card-text a {
+  text-decoration: none;
+  cursor: pointer;
+}
+.card-body {
+  text-align: left;
+}
+.card-title { 
+  margin-top: 10px;
+}
+#more {
+  display: none;
+}
+#more1 {
+  display: none;
+}
+#more2 {
+  display: none;
+}
+.card-link{
+  font-weight: bold;
+}
+.card-link:hover {
+  color:#3CC1E1;
+}
+.card:hover {
+ transform: scale(1.03);
+}
+.blockquote {
+  color: #444655;
+}
+
+
+
+
+
+
 
 
 
@@ -168,14 +244,39 @@ li {
     right: 35px;
     }
 }
-@media screen and (max-width: 900px) {
-  
+@media screen and (max-width: 1030px) {
   .line-rule {
     display:none;
 }
   }
-
-
+@media screen and (max-width: 380px) {
+    .menu-overlay a {
+      font-size: 20px;
+    }
+  }
+@media screen and (max-width: 1030px) {
+  .fodox-heading {
+    font-size: 8vw;
+}
+.fodox{
+  font-size: 7vw;        
+   }
+   .fodex-dates {
+    font-size: 6vw;
+}
+.icon-text {
+  font-size: 5vw;
+}
+.list-item {
+   font-size: 4vw;
+}
+.material-icons {
+  font-size: 4vw!important;   
+}
+#places{
+  font-size: 6vw!important; 
+}
+}
  
 
 
