@@ -168,7 +168,7 @@ li {
   margin-top: 5%;
 }
 
-/* CSS for Digital onboarding summit */
+/* CSS for Digital onboarding summit section */
 .summit {
   text-align: center;
   margin-top: 5%;
@@ -179,6 +179,7 @@ li {
 .summit-paragraph {
   color: #444655;
   padding: 2%;
+  line-height: 1.7;
 }
 .summit-cards {
   display:inline-block;
@@ -217,12 +218,137 @@ li {
 .card-link:hover {
   color:#3CC1E1;
 }
-.card:hover {
+.summit-cards:hover {
  transform: scale(1.03);
 }
 .blockquote {
   color: #444655;
 }
+cite {
+  background-image: linear-gradient(90deg, #007bff, #6EFACC);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/* CSS for Speakers section */
+.speakers-card {
+  display: inline-block;
+  margin: 10px;
+  border:none;
+  background-color:#007bff;
+}
+.sp-img{
+  width: 21rem;
+}
+.speakers-card:hover {
+  box-shadow: 5px 1px 5px #007bff;
+}
+.sp-heading {
+  background-image: linear-gradient(90deg, #007bff, #6EFACC);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  margin-bottom: 4%;
+}
+
+/* CSS for Sponsers section */
+
+.spnsrs-card {
+  display: inline-block;
+  margin: 10px;
+  border:none;
+  background-color:#3CC1E1;
+}
+.spnsrs-card:hover {
+  box-shadow: 5px 1px 5px #3CC1E1;
+}
+
+/* CSS for Media partners section */
+.media-card {
+  display: inline-block;
+  margin: 10px;
+  border:none;
+  background-color:  rgb(53, 152, 220);   
+}
+.media-card:hover {
+  box-shadow: 5px 1px 5px rgb(53, 152, 220);
+}
+
+/* CSS for Why Attend section */
+
+.quote-txt {
+  background-image: linear-gradient(90deg, #007bff, #6EFACC);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+.why-title{
+  text-align: center;
+  color: #444655;
+}
+.why-img {
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  width: 30%;
+}
+.why-card {
+  border: none;
+}
+
+/* CSS for Who Should Attend section */
+
+.who-block {
+  background-image: linear-gradient(300deg, #6EFACC, #007bff);
+}
+.attend-heading {
+  margin-top: 6%;
+}
+.attend-para {
+  color: white;
+  padding: 2%;
+  font-weight: bold;
+  font-size: 25px;
+}
+.attend-list li {
+  display: block;
+  color: white;
+  text-align: left;
+}
+.attend-block {
+  display: flex;
+  padding-bottom: 2%;
+}
+.list-block {
+  border: 2px solid white;
+  border-radius: 10px;
+  margin: 20px;
+  padding-top: 6%;
+}
+.attend-list li:hover {
+  color:#007bff;
+}
+
+/* CSS for Topics We Cover section */
+
+.card-topic{
+  display: inline-block;
+  width: 10rem;
+  margin: 10px;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -276,6 +402,17 @@ li {
 #places{
   font-size: 6vw!important; 
 }
+.speakers-card {
+  margin-right: 0;
+}
+.attend-block {
+  display: block;
+}
+.row {
+  display: block!important;
+  margin: 0 auto!important;
+}
+
 }
  
 
