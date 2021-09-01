@@ -336,8 +336,9 @@ cite {
 
 .card-topic{
   display: inline-block;
-  width: 10rem;
+  width: 12rem;
   margin: 10px;
+  border:none;
 }
 
 
