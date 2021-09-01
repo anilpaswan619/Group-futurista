@@ -1,2 +1,2 @@
-# Group-futurista
-Developed responsive web groupfuturista.com
+# Group-futurista https://anilpaswangroupfuturista.netlify.app/
+Developed responsive landing page of groupfuturista.com
